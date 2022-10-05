@@ -94,6 +94,78 @@ namespace ConsoleApp1PatikaDev
             string hour = DateTime.Now.ToString("HH/mm");
             Console.WriteLine("Hour: " + hour);
 
+
+            /*OPERRATÖRLER DERSİ
+             * ATAMA VE İŞLEMLİ ATAMA */
+
+            int m = 3;
+            int n = 3;
+            int k = k + 2;
+            Console.WriteLine(k);
+            k += 2;
+            Console.WriteLine(y);
+            k /= 1;
+            Console.WriteLine(y);
+            m *= 2;
+            Console.WriteLine(m);
+
+
+            // MANTIKSAL OPERETÖRLER
+            // && , || !
+
+            bool isSucces = true;
+            bool isCompleted = false;
+
+            if (isSucces && isCompleted)
+                Console.WriteLine("Perfesct!");
+
+            if (isSucces || isCompleted)
+                Console.WriteLine("Great!");
+
+            if (isSucces && isCompleted)
+                Console.WriteLine("Fine!");
+
+
+            //İLİŞKİSEL OPERATÖRLER
+            // <, >, <=, >=, ==, !=
+
+            int a1 = 3;
+            int b3 = 4;
+            bool sonuc = a1 < b3;
+
+            Console.WriteLine(sonuc);
+            sonuc = a1 > b3;
+            Console.WriteLine(sonuc);
+            sonuc = a1 >= b3;
+            Console.WriteLine(sonuc);
+            sonuc = a1 <= b3;
+            Console.WriteLine(sonuc);
+            sonuc = a1 == b3;
+            Console.WriteLine(sonuc);
+            sonuc = a1 != b3;
+            Console.WriteLine(sonuc);
+
+            //ARİTMETİK OPERATÖRLER
+            // /,*,+,- İFADELERİDİR
+
+            int sayi1 = 10;
+            int sayi2 = 5;
+            int sonuc1 = sayi1 / sayi2;
+            Console.WriteLine(sonuc1);
+            sonuc1 = sayi1 + sayi2;
+            Console.WriteLine(sonuc1);
+            sonuc1 = sayi1 + sayi2;
+            Console.WriteLine(sayi1);
+            sonuc1 = sayi1++;
+
+            // % mod almak için kullanılan ifade kalanı getiren ifade
+
+
+            int sonuc2 = 20 % 3;
+            Console.WriteLine(sonuc2);
+
         }
     }
 }
+
+
