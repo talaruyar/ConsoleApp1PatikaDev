@@ -164,6 +164,80 @@ namespace ConsoleApp1PatikaDev
             int sonuc2 = 20 % 3;
             Console.WriteLine(sonuc2);
 
+
+            // Implicit Conversion (Bilinçsiz Dönüşüm)
+
+            Console.WriteLine("****** Implicit Conversion *****");
+
+            byte a6 = 5;
+            sbyte b6 = 30;
+            sbyte c6 = 10;
+
+            int d6 = a6 + b6 + c6;
+            Console.WriteLine("d6: " + d6);
+
+            long h6 = d6;
+            Console.WriteLine("h6: " + h6);
+
+            float i6 = h6;
+            Console.WriteLine("i6: " + i6);
+
+            string e6 = "kerem";
+            char f6 = 'k';
+            object g6 = e6 + f6 + d6;
+            Console.WriteLine("g6: " + g6);
+
+            // Explicit Conversion (Bilinçli Dönüşüm)
+
+            Console.WriteLine("****** Explicit Conversion *****");
+            int x6 = 4;
+            byte y6 = (byte)x6;
+            Console.WriteLine("y6: " + y6);
+
+            int z6 = 100;
+            byte t6 = (byte)z6;
+            Console.WriteLine("t6: " + t6);
+
+            float w6 = 10.3f;
+            byte v6 = (byte)w6;
+            Console.WriteLine("v6: " + v6);
+
+            // ToString Method 
+            Console.WriteLine("***** ToString Method *****");
+
+            int xx = 6;
+            string yy = xx.ToString();
+            Console.WriteLine("yy: " + yy);
+
+            string zz = 12.5f.ToString();
+            Console.WriteLine("zz: " + zz);
+
+            // System.Convert
+            Console.WriteLine("***** System.Convert Method *****");
+
+            String s1 = "10", s2 = "20";
+            int number6, number26;
+            int total;
+
+            number6 = Convert.ToInt32(s1);
+            number26 = Convert.ToInt32(s2);
+            total = number1 + number26;
+            Console.WriteLine("Total: " + total);
+
+            // Parse Method
+            Console.WriteLine("***** Parse Method *****");
+
+            string metin1 = "10";
+            string metin2 = "10.25";
+            int rakam1;
+            double double1;
+
+            rakam1 = Int32.Parse(metin1);
+            double1 = Double.Parse(metin2);
+
+            Console.WriteLine("Rakam1: " + rakam1);
+            Console.WriteLine("Double1: " + double1);
+
         }
     }
 }
